@@ -8,11 +8,6 @@ export class AppController {
     return { name: 'Edjan', country: 'Natal' };
   }
 
-  @Get('/:userId')
-  getUserById(@Param() userId: string) {
-    return userId;
-  }
-
   @Post()
   store(@Req() req: Request) {
     return req.body;
